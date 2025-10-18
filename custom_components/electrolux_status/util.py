@@ -25,7 +25,7 @@ def get_electrolux_session(
     username, password, country_code, client_session, language="eng"
 ) -> OneAppApi:
     """Return OneAppApi Session."""
-    return OneAppApi(username, password, country_code, client_session)
+    return OneAppApi(username, password, country_code, client_session, language=language)
 
 
 def should_send_notification(config_entry, alert_severity, alert_status):
